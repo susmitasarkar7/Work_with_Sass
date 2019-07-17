@@ -13,20 +13,21 @@ body {
 
 .container {
   width: 30%;
-  background: #fff;
+  background: white;
   border-radius: 10px;
 }
 
 .container .inner {
-  background-color: #00ffc8;
+  background-color: #0084ff;
   padding: 1em;
   border-radius: 10px;
-  width: calc(100% - 2em);
-  -webkit-clip-path: inset(0% 0% 0% 100%);
-          clip-path: inset(0% 0% 0% 100%);
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  cursor: pointer;
+  width: 100%;
+  -webkit-clip-path: circle(10% at 0% 0%);
+          clip-path: circle(10% at 0% 0%);
+  -webkit-transition: -webkit-clip-path .5s ease-in-out;
+  transition: -webkit-clip-path .5s ease-in-out;
+  transition: clip-path .5s ease-in-out;
+  transition: clip-path .5s ease-in-out, -webkit-clip-path .5s ease-in-out;
 }
 
 .container .inner h1 {
@@ -41,8 +42,7 @@ body {
 }
 
 .container:hover .inner {
-  -webkit-clip-path: inset(0% 50% 0% 0%);
-          clip-path: inset(0% 50% 0% 0%);
-  background: #1293fd;
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
 }
 /*# sourceMappingURL=main.css.map */
