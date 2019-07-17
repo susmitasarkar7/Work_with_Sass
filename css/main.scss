@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(214, 243, 233);
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 30%;
+    background: #fff;
+    border-radius: 10px;
+
+    .inner {
+        background-color: rgb(0, 255, 200);
+        padding: 1em;
+        border-radius: 10px;
+        width: calc(100% - 2em);
+        clip-path: inset(0% 0% 0% 100%);
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+
+        h1 {
+            color: #fff;
+            margin: 0;
+        }
+
+        p {
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: .8rem;
+        }
+    }
+     
+
+    &:hover .inner {
+        clip-path: inset(0% 50% 0% 0%);
+        background: rgb(18, 147, 253);
+    }
+
+}
+
+    
+
+
